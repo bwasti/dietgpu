@@ -8,6 +8,7 @@ cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
 project(dietgpu LANGUAGES CUDA CXX VERSION 1.0)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_C_STANDARD 11)
+add_compile_definitions(_GLIBCXX_USE_CXX11_ABI=0) 
 
 include(CheckLanguage)
 check_language(CUDA)
